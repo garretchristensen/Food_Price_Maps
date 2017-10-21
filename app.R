@@ -2,6 +2,8 @@ library(shiny)
 library(ggcounty)
 library(sp)
 library(ggplot2)
+library(maptools)
+library(rgeos)
 
 df<-read.csv("mapdata.csv")
 # get the US counties map (lower 48)
