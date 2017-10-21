@@ -4,6 +4,7 @@ library(sp)
 library(ggplot2)
 library(maptools)
 library(rgeos)
+library(mapproj)
 
 df<-read.csv("mapdata.csv")
 # get the US counties map (lower 48)
