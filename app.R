@@ -8,7 +8,7 @@ library(choroplethrMaps)
 # library(tibble)
 #library(ggcounty)
 #library(sp)
-#library(ggplot2)
+library(ggplot2)
 #library(maptools)
 #library(rgeos)
 #library(mapproj)
@@ -104,7 +104,7 @@ server<- function(input, output) {
     #title = paste(input$state, input$year, sep=" "),
     num_colors = 7,
     state_zoom = tolower(input$state),
-    reference_map = FALSE)
+    reference_map = FALSE) +  scale_fill_brewer(palette=2)
   })
   # output$map <- renderPlot({
   #   df$brk <- cut(unlist(df[paste0("TFPYRM", input$year)]),
